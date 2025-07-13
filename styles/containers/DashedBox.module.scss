@@ -1,0 +1,6 @@
+@use "LinedBox.module.scss";
+
+.dashed-box {
+  @extend .lined-box;
+  border-style: dashed;
+}

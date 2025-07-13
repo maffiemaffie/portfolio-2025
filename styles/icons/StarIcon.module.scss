@@ -1,0 +1,19 @@
+@use "../vars/colors";
+@use "../vars/borders";
+@use "../vars/type";
+
+.icon-star {
+  fill: none;
+  stroke: colors.$primary;
+  stroke-width: borders.$border-width;
+
+  height: 1.5ex;
+
+  path {
+    vector-effect: non-scaling-stroke;
+  }
+}
+
+.icon-star.filled {
+  fill: colors.$primary;
+}

@@ -1,0 +1,8 @@
+@use "Box.module.scss";
+@use "../vars/colors";
+@use "../vars/borders";
+
+.lined-box {
+  @extend .box;
+  border: borders.$border-width solid colors.$primary;
+}

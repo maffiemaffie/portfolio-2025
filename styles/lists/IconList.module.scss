@@ -1,0 +1,10 @@
+@use "../vars/margins";
+@use "../layouts/layouts";
+
+.icon-list {
+  @include layouts.center-content;
+  width: fit-content;
+  max-width: 100%;
+  flex-flow: row wrap;
+  gap: margins.$s;
+}

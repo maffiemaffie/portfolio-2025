@@ -1,0 +1,25 @@
+@use "../vars/padding";
+@use "../vars/corners";
+@use "../vars/colors";
+
+.highlight-middle {
+  position: relative;
+  display: inline-block;
+  height: fit-content;
+  width: fit-content;
+  padding: padding.$l;
+
+  &::before {
+    z-index: -1;
+    display: inline-block;
+    content: "";
+    height: 50%;
+    border-radius: corners.$round-l;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: colors.$accent;
+  }
+}

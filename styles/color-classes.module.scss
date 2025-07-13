@@ -1,0 +1,20 @@
+@use "vars/colors";
+
+@each $name, $value in colors.$colors {
+  .border-#{$name} {
+    border-color: #{$value};
+  }
+  .background-#{$name} {
+    background-color: #{$value};
+    color: colors.$black;
+  }
+}
+
+.background-primary,
+.background-black {
+  color: colors.$white;
+}
+
+.background-custom {
+  background-color: var(--custom-color);
+}

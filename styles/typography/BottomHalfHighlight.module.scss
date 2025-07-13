@@ -1,0 +1,22 @@
+@use "../vars/colors";
+@use "../vars/margins";
+
+.highlight-bottom-half {
+  display: inline-block;
+  height: 2ex;
+  background: linear-gradient(
+    to bottom,
+    transparent 60%,
+    colors.$accent 60%
+  );
+
+  &::before {
+    display: inline-block;
+    content: "";
+    height: 100%;
+  }
+
+  .content {
+    vertical-align: baseline;
+  }
+}

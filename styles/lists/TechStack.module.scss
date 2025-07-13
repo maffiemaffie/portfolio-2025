@@ -1,0 +1,7 @@
+@use "../vars/margins";
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  gap: margins.$s;
+}

@@ -1,0 +1,1 @@
+export { SectionCover } from "./SectionCover";

@@ -1,0 +1,7 @@
+@use "../vars/padding";
+@use "../vars/corners";
+
+.box {
+  padding: padding.$m;
+  border-radius: corners.$round-m;
+}
