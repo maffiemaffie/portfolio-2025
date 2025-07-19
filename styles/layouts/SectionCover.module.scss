@@ -13,7 +13,7 @@
 
   img {
     max-height: 50%;
-    max-width: 400px;
+    max-width: calc(min(400px, 70%));
   }
 }
 

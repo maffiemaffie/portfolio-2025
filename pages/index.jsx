@@ -235,7 +235,7 @@ export default function Home() {
             <img src="/outspoken/cover-web.svg" alt="outspoken website" />
           </SectionCover>
           <SectionDescription>
-            <SectionDescriptionTitle>
+            <SectionDescriptionTitle size="small">
               <h3>
                 <img src="/outspoken/wordmark.svg" alt="outspoken" />
               </h3>

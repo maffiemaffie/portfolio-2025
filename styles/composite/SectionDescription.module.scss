@@ -23,16 +23,16 @@
     grid-area: header;
 
     img {
-      height: 64px;
+      height: 48px;
       max-width: 100%;
     }
 
     &.small img {
-      height: 48px;
+      height: 32px;
     }
 
     &.large img {
-      height: 96px;
+      height: 72px;
     }
   }
 
@@ -92,6 +92,15 @@
     gap: margins.$m;
 
     .title {
+      img {
+        height: 64px;
+        max-width: 100%;
+      }
+
+      &.small img {
+        height: 48px;
+      }
+
       &.large img {
         height: 140px;
       }

@@ -3,6 +3,7 @@
 
 .icon-list {
   @include layouts.center-content;
+  justify-content: flex-start;
   width: fit-content;
   max-width: 100%;
   flex-flow: row wrap;
