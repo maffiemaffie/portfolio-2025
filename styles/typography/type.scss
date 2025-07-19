@@ -1,26 +1,24 @@
-@use "../vars/type";
-
 main {
-  font: type.$font-base;
-  letter-spacing: type.$letter-spacing;
+  font: var(--font-base);
+  letter-spacing: var(--letter-spacing);
 }
 
 h1 {
-  font: type.$font-h1;
-  letter-spacing: type.$letter-spacing;
+  font: var(--font-h1);
+  letter-spacing: var(--letter-spacing);
 }
 
 h2 {
-  font: type.$font-h2;
-  letter-spacing: type.$letter-spacing;
+  font: var(--font-h2);
+  letter-spacing: var(--letter-spacing);
 }
 
 h3 {
-  font: type.$font-h3;
-  letter-spacing: type.$letter-spacing;
+  font: var(--font-h3);
+  letter-spacing: var(--letter-spacing);
 }
 
 h4 {
-  font: type.$font-h4;
-  letter-spacing: type.$letter-spacing;
+  font: var(--font-h4);
+  letter-spacing: var(--letter-spacing);
 }

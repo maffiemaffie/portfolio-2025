@@ -1,6 +1,5 @@
 @use "../vars/breakpoints";
 @use "../layouts/layouts";
-@use "../vars/type";
 @use "../vars/colors";
 @use "../vars/corners";
 @use "../vars/margins";
@@ -14,7 +13,7 @@
   overflow: hidden;
 
   h2 {
-    font: type.$font-h1;
+    font: var(--font-h1);
     flex-grow: 1;
     align-content: center;
   }
@@ -26,10 +25,10 @@
     right: 0;
     bottom: -5px;
 
-    height: type.$font-size-h2;
+    height: var(--font-size-h2);
 
-    font: type.$font-h2;
-    letter-spacing: type.$letter-spacing;
+    font: var(--font-h2);
+    letter-spacing: var(--letter-spacing);
     color: colors.$primary;
   }
 }
