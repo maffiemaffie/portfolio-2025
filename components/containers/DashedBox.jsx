@@ -5,6 +5,7 @@ export function DashedBox({
   children,
   backgroundColor,
   borderColor,
+  bigCorners,
   className,
 }) {
   return (
@@ -12,6 +13,7 @@ export function DashedBox({
       backgroundColor={backgroundColor}
       borderColor={borderColor}
       className={`${styles["dashed-box"]} ${className ?? ""}`}
+      bigCorners={bigCorners}
     >
       {children}
     </LinedBox>

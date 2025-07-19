@@ -1,16 +1,19 @@
 import styles from "@/styles/layouts/Gallery.module.scss";
-import colors from "@/styles/color-classes.module.scss";
 import Image from "next/image";
 import { Box } from "../containers";
 
-export function Gallery({ src, alt, width, height, backgroundColor = "white" }) {
-  const backgroundClass =
-    colors[`background-${backgroundColor}`] ?? colors["background-custom"];
-
+export function Gallery({
+  src,
+  alt,
+  width,
+  height,
+  backgroundColor = "white",
+}) {
   return (
-    <div
-      className={`${styles["wrapper"]} ${backgroundClass}`}
-      style={{ "--custom-color": backgroundColor }}
+    <Box
+      bigCorners
+      className={`${styles["wrapper"]}`}
+      backgroundColor={backgroundColor}
     >
       <Image
         className={styles["gallery"]}
@@ -19,6 +22,6 @@ export function Gallery({ src, alt, width, height, backgroundColor = "white" }) 
         width={width}
         height={height}
       />
-    </div>
+    </Box>
   );
 }

@@ -1,14 +1,12 @@
 @use "../vars/breakpoints";
 @use "../layouts/layouts";
 @use "../vars/colors";
-@use "../vars/corners";
 @use "../vars/margins";
 
 .hero {
   position: relative;
   height: 100vh;
   @include layouts.center-content;
-  border-radius: corners.$round-l !important;
   overflow: hidden;
 
   .year {

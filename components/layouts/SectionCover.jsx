@@ -1,16 +1,10 @@
 import styles from "@/styles/layouts/SectionCover.module.scss";
-import colors from "@/styles/color-classes.module.scss";
+import { Box } from "../containers";
 
 export function SectionCover({ backgroundColor, children }) {
-  const backgroundClass = colors[`background-${backgroundColor}`] ?? colors["background-custom"];
-
   return (
-    <header
-      className={`${styles["section-cover"]}
-      ${backgroundClass}`}
-      style={{ "--custom-color": backgroundColor }}
-    >
-      {children}
-    </header>
+    <Box bigCorners backgroundColor={backgroundColor} className={styles["wrapper"]}>
+      <header className={styles["section-cover"]}>{children}</header>
+    </Box>
   );
 }

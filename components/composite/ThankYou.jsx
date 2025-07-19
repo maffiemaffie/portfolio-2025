@@ -6,6 +6,7 @@ import { ContactLink } from "../typography";
 export function ThankYou() {
   return (
     <LinedBox
+      bigCorners
       backgroundColor={"background"}
       borderColor={"primary"}
       className={styles["thank-you"]}

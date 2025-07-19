@@ -9,13 +9,13 @@
   height: 100vh;
   @include layouts.center-content;
   flex-flow: column nowrap;
-  border-radius: corners.$round-l !important;
   overflow: hidden;
 
   h2 {
     font: var(--font-h1);
     flex-grow: 1;
     align-content: center;
+    text-align: center;
   }
 
   .year {

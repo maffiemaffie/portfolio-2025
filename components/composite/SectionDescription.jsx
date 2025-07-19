@@ -3,7 +3,7 @@ import { Box } from "../containers";
 
 export function SectionDescription({ children, bigImage, smallImage }) {
   return (
-    <Box className={styles["wrapper"]} backgroundColor={"white"}>
+    <Box bigCorners className={styles["wrapper"]} backgroundColor={"white"}>
       <article
         className={`${styles["section-description"]} 
           ${bigImage ? styles["big-image"] : ""} 
@@ -23,12 +23,16 @@ export function SectionDescriptionTitle({ children, size = "medium" }) {
     m: styles["medium"],
     medium: styles["medium"],
     l: styles["large"],
-    large: styles["large"]
+    large: styles["large"],
   };
 
   const validatedSize = sizes[size] ?? sizes["medium"];
 
-  return <header className={`${validatedSize} ${styles["title"]}`}>{children}</header>;
+  return (
+    <header className={`${validatedSize} ${styles["title"]}`}>
+      {children}
+    </header>
+  );
 }
 
 export function SectionDescriptionImage({ children }) {

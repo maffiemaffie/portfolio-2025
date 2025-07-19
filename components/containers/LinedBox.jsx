@@ -7,6 +7,7 @@ export function LinedBox({
   backgroundColor,
   borderColor,
   className,
+  bigCorners,
 }) {
   return (
     <Box
@@ -14,6 +15,7 @@ export function LinedBox({
       className={`${styles["lined-box"]} 
         ${colors[`border-${borderColor}`] ?? "border-primary"} 
         ${className ?? ""}`}
+      bigCorners={bigCorners}
     >
       {children}
     </Box>

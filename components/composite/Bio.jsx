@@ -12,6 +12,7 @@ import {
 export function Bio() {
   return (
     <LinedBox
+      bigCorners
       className={styles["wrapper"]}
       borderColor={"primary"}
       backgroundColor={"background"}

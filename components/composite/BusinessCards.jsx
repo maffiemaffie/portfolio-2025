@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function BusinessCards({ src, alt, width, height }) {
   return (
-    <Box className={styles["wrapper"]} backgroundColor={"transparent"}>
+    <Box bigCorners className={styles["wrapper"]} backgroundColor={"transparent"}>
       <Image
         className={styles["business-cards"]}
         src={src}

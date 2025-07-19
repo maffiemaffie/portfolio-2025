@@ -4,7 +4,7 @@ import { MiddleHighlight } from '../typography';
 
 export function Hero() {
   return (
-    <LinedBox backgroundColor={"background"} borderColor={"primary"} className={styles['hero']}>
+    <LinedBox bigCorners backgroundColor={"background"} borderColor={"primary"} className={styles['hero']}>
       <h1>
         <MiddleHighlight>
           Port

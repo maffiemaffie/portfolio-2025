@@ -1,7 +1,14 @@
 @use "../vars/padding";
 @use "../vars/corners";
+@use "../vars/breakpoints";
 
 .box {
   padding: padding.$m;
   border-radius: corners.$round-m;
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .box.big-corners {
+    border-radius: corners.$round-l;
+  }
 }
