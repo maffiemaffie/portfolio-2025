@@ -1,8 +1,42 @@
 @use "../vars/margins";
+@use "../vars/colors";
 
 .contact-link {
-  display: flex;
-  flex-flow: row nowrap;
+  display: grid;
+  grid-template-columns: 2ex auto;
   align-items: center;
+  justify-items: center;
   gap: margins.$s;
+
+  color: colors.$black;
+  text-decoration: none;
+
+  padding-left: 0;
+  transition: 0.2s ease-in-out;
+
+  .content {
+    background: 
+      linear-gradient(to right, colors.$accent 0%);
+
+    background-repeat: no-repeat;
+
+    background-size: 50% 0.8ex;
+
+    background-position: bottom 0.5ex left;
+
+    transition: 0.25s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    padding-left: 0.5ex;
+
+    .content {
+      background-size: 100% 0.8ex;
+    }
+  }
+
+  &:active {
+    padding-left: 2ex;
+  }
 }

@@ -1,0 +1,118 @@
+@use "../vars/padding";
+@use "../vars/margins";
+@use "../vars/corners";
+@use "../vars/breakpoints";
+@use "../layouts/layouts";
+
+.wrapper {
+  border-radius: corners.$round-l;
+  width: 100%;
+}
+
+.section-description {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "header"
+    "figure"
+    "content"
+    "list";
+  gap: margins.$s;
+
+  .title {
+    grid-area: header;
+
+    img {
+      height: 64px;
+      max-width: 100%;
+    }
+
+    &.small img {
+      height: 48px;
+    }
+
+    &.large img {
+      height: 96px;
+    }
+  }
+
+  .figure {
+    grid-area: figure;
+    @include layouts.center-content;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  &.small-image .figure {
+    img {
+      width: 60%;
+    }
+  }
+
+  .content {
+    grid-area: content;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: margins.$s;
+  }
+
+  .list {
+    grid-area: list;
+
+    ul {
+      font-size: 36px;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .wrapper {
+    padding: padding.$l;
+    margin: 0 margins.$m;
+    width: unset;
+  }
+
+  .section-description {
+    grid-template-areas:
+      "header figure"
+      "content figure"
+      "list list";
+
+    &.big-image {
+      grid-template-areas:
+        "header figure"
+        "content figure"
+        "list figure";
+    }
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: margins.$m;
+
+    .title {
+      &.large img {
+        height: 140px;
+      }
+    }
+
+    &.big-image .figure,
+    .figure {
+      width: 100%;
+      max-height: 100%;
+      align-self: center;
+      margin: 0;
+    }
+
+    .list ul {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop-small) {
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop) {
+}

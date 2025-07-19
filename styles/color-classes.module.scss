@@ -10,11 +10,19 @@
   }
 }
 
+.background-transparent {
+  background-color: transparent;
+}
+
 .background-primary,
 .background-black {
   color: colors.$white;
 }
 
 .background-custom {
-  background-color: var(--custom-color);
+  background: var(--custom-color);
+}
+
+.border-custom {
+  border-color: var(--border-color);
 }

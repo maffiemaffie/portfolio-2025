@@ -7,9 +7,21 @@ export function Icon({ icon }) {
       src: `${baseUrl}arduino.svg`,
       alt: "Arduino",
     },
+    behance: {
+      src: `${baseUrl}behance.svg`,
+      alt: "Behance",
+    },
     blender: {
       src: `${baseUrl}blender.svg`,
       alt: "Blender",
+    },
+    email: {
+      src: `${baseUrl}envelope.svg`,
+      alt: "E mail",
+    },
+    express: {
+      src: `${baseUrl}express.svg`,
+      alt: "Express",
     },
     figma: {
       src: `${baseUrl}figma.svg`,
@@ -27,6 +39,30 @@ export function Icon({ icon }) {
       src: `${baseUrl}indesign.svg`,
       alt: "Adobe In Design",
     },
+    lastfm: {
+      src: `${baseUrl}lastdotfm.svg`,
+      alt: "Last FM",
+    },
+    linkedin: {
+      src: `${baseUrl}linkedin.svg`,
+      alt: "Linked In",
+    },
+    mongodb: {
+      src: `${baseUrl}mongodb.svg`,
+      alt: "Mongo DB",
+    },
+    musicbrainz: {
+      src: `${baseUrl}musicbrainz.svg`,
+      alt: "music brainz",
+    },
+    nextjs: {
+      src: `${baseUrl}nextdotjs.svg`,
+      alt: "Next JS",
+    },
+    node: {
+      src: `${baseUrl}nodedotjs.svg`,
+      alt: "Node JS",
+    },
     photoshop: {
       src: `${baseUrl}photoshop.svg`,
       alt: "Adobe Photoshop",
@@ -35,9 +71,17 @@ export function Icon({ icon }) {
       src: `${baseUrl}react.svg`,
       alt: "React",
     },
+    redis: {
+      src: `${baseUrl}redis.svg`,
+      alt: "Redis",
+    },
     typescript: {
       src: `${baseUrl}typescript.svg`,
       alt: "Type Script",
+    },
+    unity: {
+      src: `${baseUrl}unity.svg`,
+      alt: "Unity",
     },
   };
 

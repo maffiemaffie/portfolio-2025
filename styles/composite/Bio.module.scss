@@ -1,0 +1,194 @@
+@use "../vars/breakpoints";
+@use "../vars/margins";
+@use "../vars/padding";
+@use "../layouts/layouts";
+@use "../vars/corners";
+
+.wrapper {
+  padding: padding.$m;
+  border-radius: corners.$round-l;
+}
+
+.bio {
+  --font-size-h2: 96px;
+  --font-size-h3: 36px;
+  --font-size-base: 16px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto min-content;
+  grid-template-areas:
+    "header header"
+    "description figure"
+    "contacts contacts"
+    "education education"
+    "experience experience"
+    "awards awards"
+    "software software";
+  gap: margins.$m margins.$s;
+
+  header {
+    grid-area: header;
+
+    h2 {
+      line-height: 0;
+    }
+  }
+
+  .description {
+    grid-area: description;
+    padding: padding.$s;
+    height: fit-content;
+  }
+
+  & > figure {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    grid-area: figure;
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: corners.$round-m;
+    }
+  }
+
+  .contacts {
+    grid-area: contacts;
+
+    ul {
+      width: fit-content;
+      display: flex;
+      flex-flow: column nowrap;
+      gap: margins.$xs;
+
+      li {
+        width: fit-content;
+      }
+    }
+  }
+
+  article {
+    display: flex;
+    flex-flow: column;
+    gap: margins.$s;
+    height: fit-content;
+  }
+
+  .education {
+    grid-area: education;
+  }
+
+  .experience {
+    grid-area: experience;
+  }
+
+  .awards {
+    grid-area: awards;
+  }
+
+  .software {
+    grid-area: software;
+
+    ul {
+      flex-wrap: wrap;
+      font-size: var(--font-size-h3);
+      justify-content: start;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .wrapper {
+    margin: 0 margins.$m;
+  }
+
+  .bio {
+    --font-size-h3: 48px;
+    --font-size-base: 18px;
+
+    grid-template-columns: clamp(0px, calc(50% - margins.$l * 0.5), 355px) 1fr;
+    grid-template-rows: auto auto auto minmax(auto, 1fr) auto auto;
+    gap: margins.$m margins.$l;
+
+    grid-template-areas:
+      "header education"
+      "description education"
+      "description experience"
+      "figure experience"
+      "figure awards"
+      "contacts software";
+
+    .education,
+    .experience,
+    .awards {
+      margin-bottom: margins.$m;
+    }
+
+    .software > ul {
+      font-size: 40px;
+    }
+
+    .contacts {
+      align-self: center;
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop-small) {
+  .bio {
+    --font-size-h3: 48px;
+    --font-size-base: 20px;
+    font-size: var(--font-size-base);
+
+    grid-template-areas:
+      "header header education"
+      "figure description education"
+      "figure description experience"
+      "contacts contacts experience"
+      "software software awards";
+
+    grid-template-columns: 3fr 5fr clamp(0px, calc(50% - margins.$l * 0.5), 512px);
+    grid-template-rows: auto auto 1fr;
+    gap: margins.$m;
+
+    figure {
+      max-width: 220px;
+    }
+
+    .education,
+    .experience,
+    .awards {
+      margin-left: margins.$m;
+      margin-bottom: 0;
+    }
+
+    .experience {
+      align-self: center;
+    }
+
+    .software > ul {
+      font-size: var(--font-size-h3);
+    }
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop) {
+  .bio {
+    grid-template-columns: 1fr 1fr clamp(0px, 50%, calc(100% - 628px - margins.$m));
+    grid-template-rows: unset;
+    grid-template-areas: 
+    "figure header education"
+    "figure description education"
+    "figure description experience"
+    "figure contacts experience"
+    "software software awards";
+
+    figure {
+      max-width: unset;
+    }
+  }
+}

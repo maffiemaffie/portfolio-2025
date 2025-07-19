@@ -1,8 +1,39 @@
 @use "reset";
+@use "vars/margins";
 @use "vars/colors";
 @use "typography/type";
+@use "layouts/layouts";
+@use "vars/breakpoints";
 
 body {
   color: colors.$black;
-  background: colors.$white;
+  background: colors.$background;
+}
+
+main {
+  @include layouts.center-content;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: margins.$m;
+  width: 100vw;
+  max-width: max(900px, 70vw);
+
+  & > article {
+    & > header {
+      margin: margins.$xl 0;
+    }
+
+    @include layouts.center-content;
+    flex-flow: column;
+
+    & > article {
+      margin: margins.$m 0;
+      display: flex;
+      flex-flow: column;
+      gap: margins.$m 0;
+    }
+  }
 }

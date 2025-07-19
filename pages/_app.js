@@ -12,5 +12,5 @@ export default function App({ Component, pageProps }) {
     <main className={instrumentSans.variable}>
       <Component {...pageProps} />
     </main>
-  );  
+  );
 }

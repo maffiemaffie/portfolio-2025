@@ -1,0 +1,23 @@
+@use "../vars/corners";
+@use "../vars/padding";
+@use "../vars/margins";
+@use "../vars/breakpoints";
+
+.wrapper {
+  border-radius: corners.$round-l;
+  padding: padding.$m;
+}
+
+.gallery {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .wrapper {
+    width: calc(100% - 2 * margins.$m);
+    margin: 0 margins.$m;
+    padding: padding.$l;
+  }
+}

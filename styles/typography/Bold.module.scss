@@ -1,0 +1,5 @@
+@use "../vars/type";
+
+.bold {
+  font-weight: type.$font-weight-bold;
+}

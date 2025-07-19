@@ -1,0 +1,85 @@
+@use "../vars/breakpoints";
+@use "../layouts/layouts";
+@use "../vars/type";
+@use "../vars/colors";
+@use "../vars/corners";
+@use "../vars/margins";
+
+.thank-you {
+  position: relative;
+  height: 100vh;
+  @include layouts.center-content;
+  flex-flow: column nowrap;
+  border-radius: corners.$round-l !important;
+  overflow: hidden;
+
+  h2 {
+    font: type.$font-h1;
+    flex-grow: 1;
+    align-content: center;
+  }
+
+  .year {
+    position: absolute;
+    vertical-align: baseline;
+
+    right: 0;
+    bottom: -5px;
+
+    height: type.$font-size-h2;
+
+    font: type.$font-h2;
+    letter-spacing: type.$letter-spacing;
+    color: colors.$primary;
+  }
+}
+
+.contacts {
+  justify-self: flex-end;
+  align-self: self-start;
+
+  a {
+    width: fit-content;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .thank-you {
+    h2 > span{
+      display: inline-block;
+      height: fit-content;
+    }
+    margin: margins.$m;
+    height: calc(100vh - margins.$m * 2);
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop-small) {
+  .contacts {
+    li {
+      display: flex;
+      flex-direction: column-reverse;
+      height: 5ex;
+      font-size: 18px;
+    }
+
+    a {
+      &:hover,
+      &:focus {
+        padding-left: 0;
+        padding-bottom: 0.5ex;
+      }
+
+      &:active {
+        padding-left: 0;
+        padding-bottom: 2ex;
+      }
+    }
+
+    ul {
+      display: flex;
+      flex-flow: row;
+      gap: margins.$s;
+    }
+  }
+}

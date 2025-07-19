@@ -1,0 +1,34 @@
+@use "sass:color";
+@use "../vars/colors";
+@use "../vars/corners";
+@use "../vars/breakpoints";
+@use "../vars/margins";
+
+.wrapper {
+  position: relative;
+  border-radius: corners.$round-l;
+  padding: 0;
+
+  width: 100%;
+  min-height: 160px;
+  height: 30vw;
+  overflow: hidden;
+}
+
+.business-cards {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 200px;
+  height: 50vw;
+  width: auto;
+  filter: drop-shadow(0 0 3px color.change(colors.$black, $alpha: 0.1))
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .wrapper {
+    width: calc(100% - 2 * margins.$m);
+    margin: 0 margins.$m;
+  }
+}
