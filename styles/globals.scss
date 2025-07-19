@@ -1,6 +1,7 @@
 @use "reset";
 @use "vars/margins";
 @use "vars/colors";
+@use "vars/_type.scss" as vars;
 @use "typography/type";
 @use "layouts/layouts";
 @use "vars/breakpoints";
