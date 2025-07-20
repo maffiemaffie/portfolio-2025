@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <title>Elia Cohen</title>
         <meta charSet="UTF-8" />
       </Head>
       <body>
