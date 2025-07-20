@@ -18,6 +18,7 @@ import {
   CustomGallery,
   CustomGalleryRow,
   SEO,
+  AnimatedSectionCover,
 } from "@/components";
 import { ImageSlider } from "@/components/interactive/ImageSlider";
 import Head from "next/head";
@@ -40,9 +41,17 @@ export default function Home() {
             </h2>
           </header>
           <article>
-            <SectionCover backgroundColor={"#3CBBE6"}>
-              <img src="/overboard/scully-logo.svg" alt="overboard" />
-            </SectionCover>
+            <AnimatedSectionCover
+              defaultImage={{
+                src: "/overboard/scully-logo.svg",
+                alt: "overboard",
+              }}
+              hoverImage={{
+                src: "/overboard/scully-logo-hover.svg",
+                alt: "overboard",
+              }}
+              backgroundColor={"#3CBBE6"}
+            />
             <SectionDescription bigImage>
               <SectionDescriptionTitle size="large">
                 <h3>
