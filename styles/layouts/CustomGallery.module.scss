@@ -7,12 +7,12 @@
   padding: padding.$m;
   display: flex;
   flex-flow: column nowrap;
-  gap: margins.$s;
+  gap: margins.$xs;
 }
 
 .row {
   display: grid;
-  gap: margins.$s;
+  gap: margins.$xs;
 }
 
 .row > figure,
