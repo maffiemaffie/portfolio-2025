@@ -2,6 +2,7 @@ import styles from "@/styles/composite/ThankYou.module.scss";
 import { LinedBox } from "../containers";
 import { MiddleHighlight } from "../typography";
 import { ContactLink } from "../typography";
+import { StarIcon } from "../icons";
 
 export function ThankYou() {
   return (
@@ -12,7 +13,11 @@ export function ThankYou() {
       className={styles["thank-you"]}
     >
       <h2>
-        <MiddleHighlight>Thank You!</MiddleHighlight>
+        <MiddleHighlight>
+          <StarIcon large filled />
+          Thank You!
+          <StarIcon large filled />
+        </MiddleHighlight>
       </h2>
       <aside className={styles["contacts"]}>
         <ul>
