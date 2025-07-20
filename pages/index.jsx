@@ -73,7 +73,7 @@ export default function Home() {
             </SectionDescriptionList>
           </SectionDescription>
           <CustomGallery>
-            <CustomGalleryRow columns={"7fr 6fr"} rowHeight={"30vw"}>
+            <CustomGalleryRow columns={"7fr 6fr"} rowHeight={0.3}>
               <Image
                 width={1974}
                 height={907}
@@ -94,7 +94,7 @@ export default function Home() {
                 Your browser does not support the video tag.
               </video>
             </CustomGalleryRow>
-            <CustomGalleryRow columns={"3fr 4fr"} rowHeight={"30vw"}>
+            <CustomGalleryRow columns={"3fr 4fr"} rowHeight={0.3}>
               <Image
                 width={1892}
                 height={1103}
@@ -179,7 +179,7 @@ export default function Home() {
             alt={"outspoken business cards"}
           />
           <CustomGallery backgroundColor="white">
-            <CustomGalleryRow columns={"1fr 3fr"} rowHeight={"40vw"}>
+            <CustomGalleryRow columns={"1fr 3fr"} rowHeight={0.4}>
               <video
                 autoPlay
                 playsInline

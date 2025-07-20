@@ -20,7 +20,7 @@
 .row > video,
 .row > picture {
   border-radius: corners.$round-s;
-  height: var(--row-height);
+  height: calc(var(--row-height) * 100vw);
   width: 100%;
   object-fit: cover;
 }
@@ -42,5 +42,14 @@
   .row > video,
   .row > picture {
     border-radius: corners.$round-m;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-desktop-small) {
+  .row > figure,
+  .row > img,
+  .row > video,
+  .row > picture {
+    height: calc(var(--row-height) * 1024px);
   }
 }

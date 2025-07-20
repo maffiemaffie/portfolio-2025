@@ -175,19 +175,19 @@
   }
 }
 
-@media (min-width: breakpoints.$breakpoint-desktop) {
-  .bio {
-    grid-template-columns: 1fr 1fr clamp(0px, 50%, calc(100% - 628px - margins.$m));
-    grid-template-rows: unset;
-    grid-template-areas: 
-    "figure header education"
-    "figure description education"
-    "figure description experience"
-    "figure contacts experience"
-    "software software awards";
+// @media (min-width: breakpoints.$breakpoint-desktop) {
+//   .bio {
+//     grid-template-columns: 1fr 1fr clamp(0px, 50%, calc(100% - 628px - margins.$m));
+//     grid-template-rows: unset;
+//     grid-template-areas: 
+//     "figure header education"
+//     "figure description education"
+//     "figure description experience"
+//     "figure contacts experience"
+//     "software software awards";
 
-    figure {
-      max-width: unset;
-    }
-  }
-}
+//     figure {
+//       max-width: unset;
+//     }
+//   }
+// }
