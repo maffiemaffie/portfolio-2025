@@ -1,3 +1,3 @@
-export { SectionCover } from "./SectionCover";
+export * from "./SectionCover";
 export { Gallery } from "./Gallery";
 export * from "./CustomGallery";
