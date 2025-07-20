@@ -38,14 +38,15 @@
   .figure {
     grid-area: figure;
     @include layouts.center-content;
+    aspect-ratio: 1;
 
-    img {
+    & > img {
       width: 80%;
     }
   }
 
   &.small-image .figure {
-    img {
+    & > img {
       width: 60%;
     }
   }

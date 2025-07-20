@@ -1,6 +1,7 @@
 import {
   Hero,
   Bio,
+  Box,
   StarHeader,
   SectionCover,
   SectionDescription,
@@ -15,6 +16,7 @@ import {
   BusinessCards,
   ThankYou,
 } from "@/components";
+import { ImageSlider } from "@/components/interactive/ImageSlider";
 
 export default function Home() {
   return (
@@ -41,10 +43,10 @@ export default function Home() {
               </h3>
             </SectionDescriptionTitle>
             <SectionDescriptionImage>
-              <img
-                src="/overboard/crates-texture.png"
-                alt="3D models from the game"
-              ></img>
+              <ImageSlider
+                top={{ src: "/overboard/crates-no-texture.png", alt: "" }}
+                bottom={{ src: "/overboard/crates-texture.png", alt: "" }}
+              />
             </SectionDescriptionImage>
             <SectionDescriptionContent>
               <p>
