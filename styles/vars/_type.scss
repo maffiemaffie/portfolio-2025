@@ -1,6 +1,6 @@
 /* Base font sizes */
 :root {
-  --font-size-h1: 120px;
+  --font-size-h1: 90px;
   --font-size-h2: 40px;
   --font-size-h3: 32px;
   --font-size-h4: 24px;
@@ -39,7 +39,7 @@
 /* Desktop breakpoint (replace 1024px with your breakpoint) */
 @media (min-width: 1024px) {
   :root {
-    --font-size-h1: 150px;
+    --font-size-h1: 130px;
     --font-size-h3: 60px;
     --font-size-h4: 28px;
   }

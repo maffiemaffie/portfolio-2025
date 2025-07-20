@@ -1,13 +1,14 @@
 @use "../vars/padding";
 @use "../vars/corners";
 @use "../vars/colors";
+@use "../vars/breakpoints";
 
 .highlight-middle {
   position: relative;
   display: inline-block;
   height: fit-content;
   width: fit-content;
-  padding: padding.$l;
+  padding: padding.$m;
   isolation: isolate;
 
   &::before {
@@ -15,12 +16,18 @@
     display: inline-block;
     content: "";
     height: 50%;
-    border-radius: corners.$round-l;
+    border-radius: corners.$round-m;
     position: absolute;
     left: 0;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     background-color: colors.$accent;
+  }
+}
+
+@media (min-width: breakpoints.$breakpoint-tablet) {
+  .highlight-middle::before {
+    border-radius: corners.$round-l;
   }
 }
