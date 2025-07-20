@@ -47,8 +47,8 @@ export default function Home() {
             </SectionDescriptionTitle>
             <SectionDescriptionImage>
               <ImageSlider
-                top={{ src: "/overboard/crates-no-texture.png", alt: "" }}
-                bottom={{ src: "/overboard/crates-texture.png", alt: "" }}
+                top={{ src: "/overboard/crates-no-texture.png", alt: "objects with no texture" }}
+                bottom={{ src: "/overboard/crates-texture.png", alt: "objects with textures" }}
               />
             </SectionDescriptionImage>
             <SectionDescriptionContent>
