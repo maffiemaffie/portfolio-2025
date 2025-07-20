@@ -16,7 +16,7 @@
 
   .content {
     background: 
-      linear-gradient(to right, colors.$accent 0%);
+      linear-gradient(to right, colors.$accent 0%, colors.$accent 100%);
 
     background-repeat: no-repeat;
 
