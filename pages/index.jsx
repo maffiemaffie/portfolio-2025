@@ -15,8 +15,11 @@ import {
   BottomHalfHighlight,
   BusinessCards,
   ThankYou,
+  CustomGallery,
+  CustomGalleryRow,
 } from "@/components";
 import { ImageSlider } from "@/components/interactive/ImageSlider";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -69,14 +72,58 @@ export default function Home() {
               <TechStack technologies={"unity github blender figma"} />
             </SectionDescriptionList>
           </SectionDescription>
-          <Gallery
-            width={2320}
-            height={3191}
-            src={"/overboard/gallery.png"}
-            alt={
-              "gallery showing debug screens with objects' bounding boxes highlighted, platforms with UI options for players to step on, a view of the Kinect that watches the scene, and players stepping on platforms that rock and bob in real-time."
-            }
-          />
+          <CustomGallery>
+            <CustomGalleryRow columns={"7fr 6fr"} rowHeight={"30vw"}>
+              <Image
+                width={1974}
+                height={907}
+                src={"/overboard/gallery/debug-screen.png"}
+                alt="debug view showing the hitboxes of objects in the scene"
+              />
+              <video
+                autoPlay
+                playsInline
+                muted
+                loop
+                aria-label="debug screen mirrors the game in real-time"
+              >
+                <source
+                  src="/overboard/gallery/debug-video.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </CustomGalleryRow>
+            <CustomGalleryRow columns={"3fr 4fr"} rowHeight={"30vw"}>
+              <Image
+                width={1892}
+                height={1103}
+                src={"/overboard/gallery/ui-platforms.png"}
+                alt="platforms double as buttons"
+              />
+              <Image
+                width={1510}
+                height={1103}
+                src={"/overboard/gallery/kinect.png"}
+                alt="kinect is used to define game zone and detect position"
+              />
+            </CustomGalleryRow>
+            <CustomGalleryRow columns={"1fr"} rowHeight={"100%"}>
+              <video
+                autoPlay
+                playsInline
+                muted
+                loop
+                aria-label="platforms shake, roll, and sink as players jump on and off them"
+              >
+                <source
+                  src="/overboard/gallery/dynamic-feedback.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+            </CustomGalleryRow>
+          </CustomGallery>
         </article>
       </article>
       {/* branding */}
@@ -131,12 +178,43 @@ export default function Home() {
             src={"/outspoken/business-cards.png"}
             alt={"outspoken business cards"}
           />
-          <Gallery
-            width={2320}
-            height={3191}
-            src={"/outspoken/gallery.png"}
-            alt={"outspoken branded stickers, lanyards, and info pamphlets."}
-          />
+          <CustomGallery backgroundColor="white">
+            <CustomGalleryRow columns={"1fr 3fr"} rowHeight={"40vw"}>
+              <video
+                autoPlay
+                playsInline
+                muted
+                loop
+                aria-label="water bottle covered in outspoken stickers"
+              >
+                <source
+                  src="/outspoken/gallery/water-bottle.mp4"
+                  type="video/mp4"
+                />
+                Your browser does not support the video tag.
+              </video>
+              <Image
+                width={1870}
+                height={1201}
+                src={"/outspoken/gallery/brochures.png"}
+                alt="outspoken branded brochures"
+              />
+            </CustomGalleryRow>
+            <CustomGalleryRow columns={"7fr 4fr"} rowHeight={"fit-content"}>
+              <Image
+                width={1636}
+                height={849}
+                src={"/outspoken/gallery/lanyard.png"}
+                alt="outspoken branded lanyard"
+              />
+              <Image
+                width={873}
+                height={809}
+                src={"/outspoken/gallery/phone.png"}
+                alt="phones with outspoken stickers"
+              />
+            </CustomGalleryRow>
+          </CustomGallery>
         </article>
         <article>
           <SectionCover backgroundColor={"#F12717"}>
