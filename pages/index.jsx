@@ -17,6 +17,7 @@ import {
   ThankYou,
   CustomGallery,
   CustomGalleryRow,
+  SEO,
 } from "@/components";
 import { ImageSlider } from "@/components/interactive/ImageSlider";
 import Head from "next/head";
@@ -25,9 +26,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <Head>
-        <title>Elia Cohen</title>
-      </Head>
+      <SEO />
       <div className="wrapper">
         <Hero />
         <Bio />
