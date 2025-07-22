@@ -145,6 +145,105 @@ export default function Home() {
             </CustomGallery>
           </article>
         </article>
+        {/* web dev */}
+        <article>
+          <header>
+            <h2>
+              <StarHeader>
+                <BottomHalfHighlight>Web Dev</BottomHalfHighlight>
+              </StarHeader>
+            </h2>
+          </header>
+          {/* outspoken web */}
+          <article>
+            <SectionCover backgroundColor={"#EB3D7C"}>
+              <img src="/outspoken/cover-web.svg" alt="outspoken website" />
+            </SectionCover>
+            <SectionDescription>
+              <SectionDescriptionTitle size="small">
+                <h3>
+                  <img src="/outspoken/wordmark.svg" alt="outspoken" />
+                </h3>
+              </SectionDescriptionTitle>
+              <SectionDescriptionImage>
+                <img
+                  src="/outspoken/phone-case.png"
+                  alt="phones with outspoken stickers"
+                />
+              </SectionDescriptionImage>
+              <SectionDescriptionContent>
+                <p>
+                  OUTspoken provides an array of resources to LGBTQ+ students,
+                  from supplies to clubs to events to representation. In the
+                  senate, OUTspoken holds a voting seat in Student Government
+                  and advocates for the Queer community on campus. On the
+                  ground, they organize events, distribute supplies, and aid
+                  with new and existing clubs.
+                </p>
+                <p>
+                  The new website needed to be quick to navigate and easy to
+                  parse. It needed to be welcoming and inviting, showcasing an
+                  organization of queer students, run by queer students, for
+                  queer students.
+                </p>
+                <p>
+                  The new website uses vibrant colors and a soft, homey design
+                  to create a warm space for students as they search for what
+                  they need.
+                </p>
+              </SectionDescriptionContent>
+              <SectionDescriptionList>
+                <TechStack technologies={"node react nextjs github figma"} />
+              </SectionDescriptionList>
+            </SectionDescription>
+            <Gallery
+              width={2320}
+              height={3850}
+              src={"/outspoken/gallery-web.png"}
+              alt={"phones and laptops displaying pages of the new website."}
+            />
+          </article>
+          {/* rewindle */}
+          <article>
+            <SectionCover backgroundColor={"#000000"}>
+              <img src="/rewindle/cover.svg" alt="rewindle" />
+            </SectionCover>
+            <SectionDescription bigImage>
+              <SectionDescriptionTitle>
+                <h3>Rewind.le</h3>
+              </SectionDescriptionTitle>
+              <SectionDescriptionImage>
+                <img src="/rewindle/phone.png" alt="phones showing gameplay" />
+              </SectionDescriptionImage>
+              <SectionDescriptionContent>
+                <p>
+                  Inspired by games like Wordle and Spotle, Rewind.le creates a
+                  new game, personalized to your music. By accessing your
+                  Last.fm data, Rewind.le lets you guess from your top 100
+                  albums, unlocking a clue with each guess.
+                </p>
+                <p>
+                  The website’s primary colors are green and yellow,
+                  corresponding to the main colors in Wordle.
+                </p>
+              </SectionDescriptionContent>
+              <SectionDescriptionList>
+                <TechStack
+                  technologies={
+                    "node react redis mongodb express lastfm musicbrainz"
+                  }
+                />
+              </SectionDescriptionList>
+            </SectionDescription>
+            <Gallery
+              width={2320}
+              height={4311}
+              src={"/rewindle/gallery.png"}
+              alt={"phones displaying different screens and gameplay."}
+              backgroundColor="radial-gradient(87.79% 87.79% at 50% 12.21%, #0A1807 5.29%, #0D0C03 80.77%);"
+            />
+          </article>
+        </article>
         {/* branding */}
         <article>
           <header>
@@ -318,105 +417,6 @@ export default function Home() {
               height={3191}
               src={"/bombing-science/gallery.png"}
               alt={"bombing science branded spray cans and stickers"}
-            />
-          </article>
-        </article>
-        {/* web dev */}
-        <article>
-          <header>
-            <h2>
-              <StarHeader>
-                <BottomHalfHighlight>Web Dev</BottomHalfHighlight>
-              </StarHeader>
-            </h2>
-          </header>
-          {/* outspoken web */}
-          <article>
-            <SectionCover backgroundColor={"#EB3D7C"}>
-              <img src="/outspoken/cover-web.svg" alt="outspoken website" />
-            </SectionCover>
-            <SectionDescription>
-              <SectionDescriptionTitle size="small">
-                <h3>
-                  <img src="/outspoken/wordmark.svg" alt="outspoken" />
-                </h3>
-              </SectionDescriptionTitle>
-              <SectionDescriptionImage>
-                <img
-                  src="/outspoken/phone-case.png"
-                  alt="phones with outspoken stickers"
-                />
-              </SectionDescriptionImage>
-              <SectionDescriptionContent>
-                <p>
-                  OUTspoken provides an array of resources to LGBTQ+ students,
-                  from supplies to clubs to events to representation. In the
-                  senate, OUTspoken holds a voting seat in Student Government
-                  and advocates for the Queer community on campus. On the
-                  ground, they organize events, distribute supplies, and aid
-                  with new and existing clubs.
-                </p>
-                <p>
-                  The new website needed to be quick to navigate and easy to
-                  parse. It needed to be welcoming and inviting, showcasing an
-                  organization of queer students, run by queer students, for
-                  queer students.
-                </p>
-                <p>
-                  The new website uses vibrant colors and a soft, homey design
-                  to create a warm space for students as they search for what
-                  they need.
-                </p>
-              </SectionDescriptionContent>
-              <SectionDescriptionList>
-                <TechStack technologies={"node react nextjs github figma"} />
-              </SectionDescriptionList>
-            </SectionDescription>
-            <Gallery
-              width={2320}
-              height={3850}
-              src={"/outspoken/gallery-web.png"}
-              alt={"phones and laptops displaying pages of the new website."}
-            />
-          </article>
-          {/* rewindle */}
-          <article>
-            <SectionCover backgroundColor={"#000000"}>
-              <img src="/rewindle/cover.svg" alt="rewindle" />
-            </SectionCover>
-            <SectionDescription bigImage>
-              <SectionDescriptionTitle>
-                <h3>Rewind.le</h3>
-              </SectionDescriptionTitle>
-              <SectionDescriptionImage>
-                <img src="/rewindle/phone.png" alt="phones showing gameplay" />
-              </SectionDescriptionImage>
-              <SectionDescriptionContent>
-                <p>
-                  Inspired by games like Wordle and Spotle, Rewind.le creates a
-                  new game, personalized to your music. By accessing your
-                  Last.fm data, Rewind.le lets you guess from your top 100
-                  albums, unlocking a clue with each guess.
-                </p>
-                <p>
-                  The website’s primary colors are green and yellow,
-                  corresponding to the main colors in Wordle.
-                </p>
-              </SectionDescriptionContent>
-              <SectionDescriptionList>
-                <TechStack
-                  technologies={
-                    "node react redis mongodb express lastfm musicbrainz"
-                  }
-                />
-              </SectionDescriptionList>
-            </SectionDescription>
-            <Gallery
-              width={2320}
-              height={4311}
-              src={"/rewindle/gallery.png"}
-              alt={"phones displaying different screens and gameplay."}
-              backgroundColor="radial-gradient(87.79% 87.79% at 50% 12.21%, #0A1807 5.29%, #0D0C03 80.77%);"
             />
           </article>
         </article>
