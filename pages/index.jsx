@@ -158,9 +158,11 @@ export default function Home() {
           </header>
           {/* outspoken web */}
           <article id="outspoken-website">
+            <a href="https://rit.edu/outspoken/">
             <SectionCover backgroundColor={"#EB3D7C"}>
               <img src="/outspoken/cover-web.svg" alt="outspoken website" />
             </SectionCover>
+            </a>
             <SectionDescription>
               <SectionDescriptionTitle size="small">
                 <Link href={"https://rit.edu/outspoken/"}>
@@ -209,9 +211,11 @@ export default function Home() {
           </article>
           {/* rewindle */}
           <article id="rewindle">
+            <a href="https://rewindle.app">
             <SectionCover backgroundColor={"#000000"}>
               <img src="/rewindle/cover.svg" alt="rewindle" />
             </SectionCover>
+            </a>
             <SectionDescription bigImage>
               <SectionDescriptionTitle>
                 <Link href={"https://rewindle.app"}>
