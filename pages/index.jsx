@@ -32,7 +32,7 @@ export default function Home() {
         <Hero />
         <Bio />
         {/* mixed reality */}
-        <article>
+        <article id="mixed-reality">
           <header>
             <h2>
               <StarHeader>
@@ -40,7 +40,8 @@ export default function Home() {
               </StarHeader>
             </h2>
           </header>
-          <article>
+          {/* overboard */}
+          <article id="overboard">
             <AnimatedSectionCover
               defaultImage={{
                 src: "/overboard/scully-logo.svg",
@@ -146,7 +147,7 @@ export default function Home() {
           </article>
         </article>
         {/* web dev */}
-        <article>
+        <article id="web-dev">
           <header>
             <h2>
               <StarHeader>
@@ -155,7 +156,7 @@ export default function Home() {
             </h2>
           </header>
           {/* outspoken web */}
-          <article>
+          <article id="outspoken-website">
             <SectionCover backgroundColor={"#EB3D7C"}>
               <img src="/outspoken/cover-web.svg" alt="outspoken website" />
             </SectionCover>
@@ -204,7 +205,7 @@ export default function Home() {
             />
           </article>
           {/* rewindle */}
-          <article>
+          <article id="rewindle">
             <SectionCover backgroundColor={"#000000"}>
               <img src="/rewindle/cover.svg" alt="rewindle" />
             </SectionCover>
@@ -245,7 +246,7 @@ export default function Home() {
           </article>
         </article>
         {/* branding */}
-        <article>
+        <article id="branding">
           <header>
             <h2>
               <StarHeader>
@@ -253,7 +254,7 @@ export default function Home() {
               </StarHeader>
             </h2>
           </header>
-          <article>
+          <article id="outspoken-brand">
             <SectionCover backgroundColor={"#796efc"}>
               <img src="/outspoken/logo-mono.svg" alt="outspoken" />
             </SectionCover>
@@ -335,7 +336,7 @@ export default function Home() {
               </CustomGalleryRow>
             </CustomGallery>
           </article>
-          <article>
+          <article id="pudgies">
             <SectionCover backgroundColor={"#F12717"}>
               <img src="/pudgies/logo-mono.svg" alt="pudgie's pizzeria" />
             </SectionCover>
@@ -381,7 +382,7 @@ export default function Home() {
               alt={"pudgie's pizza takeout menus."}
             />
           </article>
-          <article>
+          <article id="bombing-science">
             <SectionCover backgroundColor={"#000000"}>
               <img src="/bombing-science/logo-b.svg" alt="bombing science" />
             </SectionCover>
@@ -412,7 +413,7 @@ export default function Home() {
               </SectionDescriptionList>
             </SectionDescription>
             <Gallery
-              backgroundColor="black"
+              backgroundColor="#000000"
               width={2320}
               height={3191}
               src={"/bombing-science/gallery.png"}
