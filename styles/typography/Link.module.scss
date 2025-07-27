@@ -1,0 +1,32 @@
+@use "../vars/margins";
+@use "../vars/colors";
+
+.link {
+  display: inline-block;
+
+  color: colors.$black;
+  text-decoration: none;
+
+  padding-left: 0;
+  transition: 0.2s ease-in-out;
+
+  background: linear-gradient(to right, colors.$accent 0%, colors.$accent 100%);
+
+  background-repeat: no-repeat;
+
+  background-size: 50% 50%;
+
+  background-position: bottom left;
+
+  transition: 0.25s ease-in-out;
+
+  &:hover,
+  &:focus {
+    padding-left: 0.5ex;
+    background-size: 100% 50%;
+  }
+
+  &:active {
+    padding-left: 2ex;
+  }
+}

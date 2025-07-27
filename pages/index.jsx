@@ -21,6 +21,7 @@ import {
   AnimatedSectionCover,
 } from "@/components";
 import { ImageSlider } from "@/components/interactive/ImageSlider";
+import { Link } from "@/components/typography/Link";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -162,9 +163,11 @@ export default function Home() {
             </SectionCover>
             <SectionDescription>
               <SectionDescriptionTitle size="small">
-                <h3>
-                  <img src="/outspoken/wordmark.svg" alt="outspoken" />
-                </h3>
+                <Link href={"https://rit.edu/outspoken/"}>
+                  <h3>
+                    <img src="/outspoken/wordmark.svg" alt="outspoken" />
+                  </h3>
+                </Link>
               </SectionDescriptionTitle>
               <SectionDescriptionImage>
                 <img
@@ -211,7 +214,9 @@ export default function Home() {
             </SectionCover>
             <SectionDescription bigImage>
               <SectionDescriptionTitle>
-                <h3>Rewind.le</h3>
+                <Link href={"https://rewindle.app"}>
+                  <h3>Rewind.le</h3>
+                </Link>
               </SectionDescriptionTitle>
               <SectionDescriptionImage>
                 <img src="/rewindle/phone.png" alt="phones showing gameplay" />
