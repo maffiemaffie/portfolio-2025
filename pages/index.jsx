@@ -217,7 +217,7 @@ export default function Home() {
             </SectionCover>
             </a>
             <SectionDescription bigImage>
-              <SectionDescriptionTitle>
+              <SectionDescriptionTitle size="small">
                 <Link href={"https://rewindle.app"}>
                   <h3>Rewind.le</h3>
                 </Link>
