@@ -167,7 +167,7 @@ export default function Home() {
               <SectionDescriptionTitle size="small">
                 <Link href={"https://rit.edu/outspoken/"}>
                   <h3>
-                    <img src="/outspoken/wordmark.svg" alt="outspoken" />
+                    OUTspoken
                   </h3>
                 </Link>
               </SectionDescriptionTitle>
