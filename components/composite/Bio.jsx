@@ -89,24 +89,22 @@ export function Bio() {
           <p>
             <Bold>New Media Interactive Development BS</Bold>
           </p>
-          <p>August 2021 - Expected December 2025</p>
-          <p>Department GPA: 3.0</p>
+          <p>August 2021 - Expected May 2026</p>
+          <p>3.0 GPA</p>
         </article>
         <article className={styles["experience"]}>
           <h3>
             <StarHeader>experience</StarHeader>
           </h3>
           <p>
-            <Bold>OUTspoken RIT - Graphic Designer</Bold>
+            <Bold>Looking For Group - Lead Full-Stack Developer</Bold>
           </p>
-          <p>August 2024 - May 2025</p>
+          <p>August 2025 - December 2025</p>
           <p>
-            Create refreshed brand identity, including logos, typography,
-            colors, icons, and style guides.
+            Led a team of designers and developers in building a social media platform made for creatives.
           </p>
           <p>
-            Create new webpage designs to improve user experience and increase
-            brand awareness.
+            Crushed bugs and eliminated inherited tech-debt while building out new features.
           </p>
         </article>
         <article className={styles["awards"]}>

@@ -20,7 +20,7 @@ export function Hero() {
           <StarIcon large filled/>
         </MiddleHighlight>
       </h1>
-      <span className={styles["year"]}>2025</span>
+      <span className={styles["year"]}>2026</span>
     </LinedBox>
   );
 }
