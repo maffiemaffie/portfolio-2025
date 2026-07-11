@@ -89,7 +89,7 @@ export function Bio() {
           <p>
             <Bold>New Media Interactive Development BS</Bold>
           </p>
-          <p>August 2021 - Expected May 2026</p>
+          <p>August 2021 - May 2026</p>
           <p>3.0 GPA</p>
         </article>
         <article className={styles["experience"]}>
@@ -97,14 +97,29 @@ export function Bio() {
             <StarHeader>experience</StarHeader>
           </h3>
           <p>
+            <Bold>Code Platoon - Teaching Assistant</Bold>
+            <br />
+            January 2026 - May 2026
+          </p>
+          <p>
+            Guided students learning full-stack development for the first time.
+          </p>
+          <p>
+            Worked with a team of students to build a dashboard for organizing a
+            classroom.
+          </p>
+          <p>
             <Bold>Looking For Group - Lead Full-Stack Developer</Bold>
-          </p>
-          <p>August 2025 - December 2025</p>
-          <p>
-            Led a team of designers and developers in building a social media platform made for creatives.
+            <br />
+            August 2025 - December 2025
           </p>
           <p>
-            Crushed bugs and eliminated inherited tech-debt while building out new features.
+            Led a team of designers and developers building a social platform
+            made for creatives.
+          </p>
+          <p>
+            Crushed bugs and eliminated inherited tech-debt while building out
+            new features.
           </p>
         </article>
         <article className={styles["awards"]}>

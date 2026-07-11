@@ -44,7 +44,7 @@ export function ThankYou() {
           </li>
         </ul>
       </aside>
-      <span className={styles["year"]}>2025</span>
+      <span className={styles["year"]}>2026</span>
     </LinedBox>
   );
 }
